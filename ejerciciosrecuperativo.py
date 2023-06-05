@@ -14,9 +14,9 @@ import numpy as np
 
 #PARA SACAR NUMEROS PARES DE UNA LISTA entre 0 y 500
 
-#lista=[i for i in range(0,500) if i % 2 == 0]
-#print(lista)
+lista=[i for i in range(0,500) if i % 2 == 0]
+print(lista)
 
 #PRUEBA DE VALIDACION NUMEROS PARES SEGUN LISTA DEFINIDA EN PRIMER PUNTO
-list=[arreglo_A for arreglo_A in range(0,500) if arreglo_A % 2 == 0]
-print(list)
+#list=[arreglo_A for arreglo_A in range(0,500) if arreglo_A % 2 == 0]
+#print(list)
