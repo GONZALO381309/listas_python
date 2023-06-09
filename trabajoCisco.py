@@ -115,10 +115,12 @@
 #for digit in "0165031806510":
 #    if digit == "0":
 #        digit="x"
-#    print(digit)
+#    print(digit)               #ARROJA VALOR COMO COLUMNA......
+
 
 for digit in "0165031806510":
     if digit == "0":
         print("x", end="")
         continue
-    print(digit, end="")
+    print(digit, end="")         #ARROJA VALOR HORIZONTAL....
+    
