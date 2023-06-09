@@ -1,5 +1,17 @@
+#VARIABLES DE INFORMACION DE INFORMACION VEHICULO
+marca=(2,15)
+#----------------------------------------------------
 opcion=0
 opcion_info_vehi=0
+lista=()
+#ALMACENAMIENTO DE INFORMACION VEHICULAR
+tipo_almacenado=0
+patente_almacenado=0
+marca_almacenado=0
+precio_almacenado=0
+multas_almacenado=0
+fecha_registro_almacenado=0
+nombre_dueno_almacenado=0
 print("Bienvenido a la Automotora AUTO SEGURO")
 print("Selecciones una de las siguientes opciones para acceder:")
 print()
@@ -10,19 +22,27 @@ print("4. SALIR")
 opcion=int(input("Ingrese una de las siguientes opciones: "))
 if opcion == 1:
     print("Usted seleccionado opcion 1.- GRABAR")
-    print("Ingreso información de vehículos:\n 1. Tipo \n 2. Patente \n 3. Marca \n 4. Precio \n 5. multas \n 6. Fecha Registro Vehículo \n 7. Nombre Dueño")
-    opcion_info_vehi=int(input("Ingrese la informacion del vehiculo: "))
+    print("1. Ingreso información de vehículos:\nTipo \nPatente \nMarca \nPrecio \nmultas \nFecha Registro Vehículo \nNombre Dueño")
+    opcion_info_vehi=int(input("Presione 1 para ingreso de datos: "))
+    
     if opcion_info_vehi == 1:
         tipo=input("Ingrese tipo de vehículo: ")
-    if opcion_info_vehi == 2:
+        tipo_almacenado=tipo
         patente=input("Ingrese patente vehicular: ")
-    if opcion_info_vehi == 3:
+        patente_almacenado=patente
         marca=input("Ingrese marca del vehiculo: ")
-    if opcion_info_vehi == 4:
+        if marca < "2" or marca > "15":
+            print("ERROR----> Sólo debe ingresar minimo de 2 a 15 caracteres")
+            break
+        marca_almacenado=marca
         precio=int(input("Ingrese precio del vehículo: "))
-    if opcion_info_vehi == 5:
+        precio_almacenado=precio
         multas=int(input("Ingrese el monto de la multa del vehículo: "))
-    if opcion_info_vehi == 6:
+        multas_almacenado=multas
         fecha_registro=input("Ingrese fecha de registro del vehículo: ")
-    if opcion_info_vehi == 7:
+        fecha_registro_almacenado=fecha_registro
         nombre_dueno=input("Ingrese nombre del dueño del vehículo: ")
+        nombre_dueno_almacenado=nombre_dueno
+    lista= tipo_almacenado,patente_almacenado,marca_almacenado,precio_almacenado,multas_almacenado,fecha_registro_almacenado,nombre_dueno_almacenado
+    print("Los datos almacenados en informacion vehicular son: ", lista)
+    
