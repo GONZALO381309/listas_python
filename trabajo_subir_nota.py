@@ -29,13 +29,16 @@ if opcion == 1:
         tipo=input("Ingrese tipo de vehículo: ")
         tipo_almacenado=tipo
         patente=input("Ingrese patente vehicular: ")
-        patente_almacenado=patente
+        print("Ha ingresado la patente correcta?\n1.SI,\n2.NO")
+        validacion_patente=int(input())
+        if validacion_patente == 1:
+            patente_almacenado=patente
+        if validacion_patente == 2:
+            patente=input("Ingrese patente vehicular: ")
+            patente_almacenado=patente
         marca=input("Ingrese marca del vehiculo: ")
-        if marca < "2" or marca > "15":
-            print("ERROR----> Sólo debe ingresar minimo de 2 a 15 caracteres")
-            break
         marca_almacenado=marca
-        precio=int(input("Ingrese precio del vehículo: "))
+        precio=input("Ingrese precio del vehículo: ")
         precio_almacenado=precio
         multas=int(input("Ingrese el monto de la multa del vehículo: "))
         multas_almacenado=multas
