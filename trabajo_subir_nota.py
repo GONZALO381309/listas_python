@@ -1,4 +1,5 @@
 import numpy as np
+import random
 #VARIABLES DE INFORMACION DE INFORMACION VEHICULO
 marca=(2,15)
 #----------------------------------------------------
@@ -15,6 +16,8 @@ precio_almacenado=0
 multas_almacenado=0
 fecha_registro_almacenado=0
 nombre_dueno_almacenado=0
+#VARIABLES DE OPCION 3
+valor_certificado=(1500,3500)
 print("Bienvenido a la Automotora AUTO SEGURO")
 while menu_act:
     print("Selecciones una de las siguientes opciones para acceder:")
@@ -29,7 +32,7 @@ while menu_act:
         print("Usted seleccionado opcion 1.- GRABAR")
         print("1. Ingreso información de vehículos:\nTipo \nPatente \nMarca \nPrecio \nmultas \nFecha Registro Vehículo \nNombre Dueño")
         opcion_info_vehi=int(input("Presione 1 para ingreso de datos: "))
-    
+       
         if opcion_info_vehi == 1:
             tipo=input("Ingrese tipo de vehículo: ")
             tipo_almacenado=tipo
@@ -59,11 +62,38 @@ while menu_act:
             nombre_dueno_almacenado=nombre_dueno
         lista= tipo_almacenado,patente_almacenado,marca_almacenado,precio_almacenado,multas_almacenado,fecha_registro_almacenado,nombre_dueno_almacenado
         print("Los datos almacenados en informacion vehicular son: ", lista)
-
+        continue
     if opcion == 2:
         print("Usted seleccionado opcion 2.- BUSCAR")
         buscar_patente=input("Ingrese patente del vehiculo a buscar: ")
         if buscar_patente == patente_almacenado:
             print(lista)
-        break
+        
+
+    if opcion == 3:
+        print("Usted seleccionado opcion 3.- IMPRIMIR CERTIFICADOS")
+        for i in range(1):
+            valor_aleatorio1=random.randint(1500,3500)
+            valor_aleatorio2=random.randint(1500,3500)
+            valor_aleatorio3=random.randint(1500,3500)
+            print("El valor de los ceritifcados de Emision de Contaminantes  tiene un costo de: $", valor_aleatorio1)
+            print("El valor de los ceritifcados de Anotaciones Vigentes, tiene un costo de: $", valor_aleatorio2)
+            print("El valor de los ceritifcados de Certificados de Multas, tiene un costo de: $", valor_aleatorio3)
+            print("Los documento impresos corresponden a la petente: ",patente_almacenado)
+            print("Y su dueño es: ",nombre_dueno_almacenado)
+        
+    
+    if opcion == 4:
+        print("Usted ha seleccionado la opcion 4.- SALIR")
+        print("Gonzalo Cortez")
+        print("Versión: 1.0")
+    menu_act=False
+
+
+        
+        
+            
+                         
+
+
     
