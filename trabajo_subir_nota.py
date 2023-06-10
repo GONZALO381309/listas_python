@@ -8,12 +8,14 @@ opcion_info_vehi=0
 lista=()
 multas=0
 menu_act=True
+er=True
 #ALMACENAMIENTO DE INFORMACION VEHICULAR
 tipo_almacenado=0
 patente_almacenado=0
 marca_almacenado=0
 precio_almacenado=0
 multas_almacenado=0
+multas_almacenado1=0
 fecha_registro_almacenado=0
 nombre_dueno_almacenado=0
 #VARIABLES DE OPCION 3
@@ -32,7 +34,7 @@ while menu_act:
         print("Usted seleccionado opcion 1.- GRABAR")
         print("1. Ingreso información de vehículos:\nTipo \nPatente \nMarca \nPrecio \nmultas \nFecha Registro Vehículo \nNombre Dueño")
         opcion_info_vehi=int(input("Presione 1 para ingreso de datos: "))
-       
+             
         if opcion_info_vehi == 1:
             tipo=input("Ingrese tipo de vehículo: ")
             tipo_almacenado=tipo
@@ -53,7 +55,8 @@ while menu_act:
                 print("El precio no es mayor a 5.000.000") 
             respuesta_multa=int(input("El vehiculo tiene multa?\n1.SI, \n2.NO: \n"))
             if respuesta_multa==1:
-                multas=input("Ingrese el monto de la multa del vehículo: ")
+                multas=input("Ingrese el monto de la multa del vehículo: $ ")
+                multas_almacenado=multas
             else:
                 multas_almacenado=multas
             fecha_registro=input("Ingrese fecha de registro del vehículo: ")
@@ -67,8 +70,10 @@ while menu_act:
         print("Usted seleccionado opcion 2.- BUSCAR")
         buscar_patente=input("Ingrese patente del vehiculo a buscar: ")
         if buscar_patente == patente_almacenado:
-            print(lista)
-        
+            print("Los datos de la petente son: ", lista)
+        else:
+            print("Patente no existe en sistema")
+        continue
 
     if opcion == 3:
         print("Usted seleccionado opcion 3.- IMPRIMIR CERTIFICADOS")
@@ -81,12 +86,12 @@ while menu_act:
             print("El valor de los ceritifcados de Certificados de Multas, tiene un costo de: $", valor_aleatorio3)
             print("Los documento impresos corresponden a la petente: ",patente_almacenado)
             print("Y su dueño es: ",nombre_dueno_almacenado)
-        
+        continue
     
     if opcion == 4:
         print("Usted ha seleccionado la opcion 4.- SALIR")
         print("Gonzalo Cortez")
-        print("Versión: 1.0")
+        print("Versión Programa: 1.0")
     menu_act=False
 
 
