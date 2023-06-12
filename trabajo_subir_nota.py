@@ -5,13 +5,13 @@ marca=(2,15)
 #----------------------------------------------------
 opcion=0
 opcion_info_vehi=0
-lista=()
+lista=[]
 multas=0
 menu_act=True
 er=True
 #ALMACENAMIENTO DE INFORMACION VEHICULAR
 tipo_almacenado=0
-patente_almacenado=0
+patente_almacenado=0        
 marca_almacenado=0
 precio_almacenado=0
 multas_almacenado=0
@@ -63,9 +63,8 @@ while menu_act:
             fecha_registro_almacenado=fecha_registro
             nombre_dueno=input("Ingrese nombre del dueño del vehículo: ")
             nombre_dueno_almacenado=nombre_dueno
-        lista= tipo_almacenado,patente_almacenado,marca_almacenado,precio_almacenado,multas_almacenado,fecha_registro_almacenado,nombre_dueno_almacenado
+        lista= [tipo_almacenado,patente_almacenado,marca_almacenado,precio_almacenado,multas_almacenado,fecha_registro_almacenado,nombre_dueno_almacenado]
         print("Los datos almacenados en informacion vehicular son: ", lista)
-        arreglo=np.array(lista)
         continue
     if opcion == 2:
         print("Usted seleccionado opcion 2.- BUSCAR")
@@ -85,7 +84,7 @@ while menu_act:
             print("El valor de los ceritifcados de Emision de Contaminantes  tiene un costo de: $", valor_aleatorio1)
             print("El valor de los ceritifcados de Anotaciones Vigentes, tiene un costo de: $", valor_aleatorio2)
             print("El valor de los ceritifcados de Certificados de Multas, tiene un costo de: $", valor_aleatorio3)
-            print("Los documento impresos corresponden a la petente: ",patente_almacenado)
+            print("Los documentos impresos corresponden a la petente: ",patente_almacenado)
             print("Y su dueño es: ",nombre_dueno_almacenado)
         continue
     
