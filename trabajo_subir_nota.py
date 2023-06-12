@@ -65,6 +65,7 @@ while menu_act:
             nombre_dueno_almacenado=nombre_dueno
         lista= tipo_almacenado,patente_almacenado,marca_almacenado,precio_almacenado,multas_almacenado,fecha_registro_almacenado,nombre_dueno_almacenado
         print("Los datos almacenados en informacion vehicular son: ", lista)
+        arreglo=np.array(lista)
         continue
     if opcion == 2:
         print("Usted seleccionado opcion 2.- BUSCAR")
@@ -91,7 +92,7 @@ while menu_act:
     if opcion == 4:
         print("Usted ha seleccionado la opcion 4.- SALIR")
         print("Gonzalo Cortez")
-        print("Versión Programa: 1.0")
+        print("Versión del Programa: 1.0")
     menu_act=False
 
 
