@@ -139,12 +139,6 @@ if usuario == user and contraseña == 1234 or usuario == user2 and contraseña =
             print("Usted a seleccionado opcion 6.- SALIR")
             print("Ha salido del sistema, muchas gracias")
             break
-    
-    
-    
-    
-    
-    
     menu_activo=False
 
 else:

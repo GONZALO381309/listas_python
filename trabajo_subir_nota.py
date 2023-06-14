@@ -84,7 +84,7 @@ while menu_act:
             print("El valor de los ceritifcados de Emision de Contaminantes  tiene un costo de: $", valor_aleatorio1)
             print("El valor de los ceritifcados de Anotaciones Vigentes, tiene un costo de: $", valor_aleatorio2)
             print("El valor de los ceritifcados de Certificados de Multas, tiene un costo de: $", valor_aleatorio3)
-            print("Los documentos impresos corresponden a la petente: ",patente_almacenado)
+            print("Los documentos impresos corresponden a la patente: ",patente_almacenado)
             print("Y su dueño es: ",nombre_dueno_almacenado)
         continue
     
