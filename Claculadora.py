@@ -13,7 +13,7 @@ def division(num_1:int,num_2:int):
     return num_1/num_2
 
 while encendido:
-    print("***CALCULADORA***\n")
+    print("***CALCULADORA***")
     print("1.-Sumar 2 numeros")
     print("2.-Restar 2 numeros")
     print("3.-Multiplicar 2 numeros")
