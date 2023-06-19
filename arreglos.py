@@ -1,10 +1,14 @@
+#ARREGLO RECORRIDO CON UN FOR
 import numpy as np
 #forma 1 desde lista
-#lista=[1,2,3,4]
+lista=[1,2,3,4]
 #listb=[5,6,7,8]
-#arr= np.array(lista)
+arr= np.array(lista)
+for i in range(len(lista)):
 #arr= np.array(listb)
-#print(arr)
+    print(arr[i])
+
+
 
 #forma 2 directa
 #arr2=np.array([5,6,7,8])

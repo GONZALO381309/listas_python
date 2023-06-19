@@ -64,7 +64,16 @@ while menu_act:
             nombre_dueno=input("Ingrese nombre del dueño del vehículo: ")
             nombre_dueno_almacenado=nombre_dueno
         lista= [tipo_almacenado,patente_almacenado,marca_almacenado,precio_almacenado,multas_almacenado,fecha_registro_almacenado,nombre_dueno_almacenado]
-        print("Los datos almacenados en informacion vehicular son: ", lista[i])
+        arreglo=np.array(lista)
+        for i in range(1):
+            print("El tipo de vehñiculo fue un/a: ", tipo_almacenado)
+            print("La patente vehicular ingresada fue: ", patente_almacenado)
+            print("La marca del vehicular ingresada fue: ", marca_almacenado)
+            print("El precio del vehicular ingresado fue por un monto de: ", precio_almacenado)
+            print("El valor de la multa ingresada del vehiculo fue: ", multas_almacenado)
+            print("La fecha de registro vehicular fue el: ", fecha_registro_almacenado)
+            print("El dueño del vehículo es: ", nombre_dueno_almacenado)
+
         continue
     if opcion == 2:
         print("Usted seleccionado opcion 2.- BUSCAR")

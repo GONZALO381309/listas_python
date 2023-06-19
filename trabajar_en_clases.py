@@ -1,6 +1,6 @@
 import numpy as np
 import random
-from Funciones import * 
+#from Funciones import * 
 #VARIABLES DE INFORMACION DE INFORMACION VEHICULO
 marca=(2,15)
 #----------------------------------------------------
@@ -9,7 +9,7 @@ opcion_info_vehi=0
 lista=[]
 multas=0
 menu_act=True
-er=True
+
 #ALMACENAMIENTO DE INFORMACION VEHICULAR
 tipo_almacenado=0
 patente_almacenado=0        
@@ -35,6 +35,10 @@ while menu_act:
 
     if opcion == 2:
         print("Usted ha seleccionado la opcion 2.- BUSCAR")
+        ingreso_patente=input("Ingrese patente a buscar: ")
+             
+
+
         
 
     if opcion == 4:
