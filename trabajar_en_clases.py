@@ -1,5 +1,6 @@
 import numpy as np
 import random
+from Funciones import * 
 #VARIABLES DE INFORMACION DE INFORMACION VEHICULO
 marca=(2,15)
 #----------------------------------------------------
@@ -30,6 +31,11 @@ while menu_act:
     print("4. SALIR")
 
     opcion=int(input("Ingrese una de las siguientes opciones: "))
+
+
+    if opcion == 2:
+        print("Usted ha seleccionado la opcion 2.- BUSCAR")
+        
 
     if opcion == 4:
         print("Usted ha seleccionado la opcion 4.- SALIR")

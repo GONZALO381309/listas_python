@@ -41,8 +41,8 @@ for _ in range(10):
     Lista.append(numero_aleatorio)
     if numero_aleatorio % 2 == 0:
         print("Los numeros pares son: ",numero_aleatorio)
-Lista.append(501)
-Lista.insert(0,501)
+#Lista.append(501)
+#Lista.insert(0,501)
 arreglo=np.array(Lista)
 print("Este es el numero maximo: ", arreglo.max())
 print("Esta en la posición: ",Lista.index(arreglo.max()))

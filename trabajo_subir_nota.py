@@ -64,7 +64,7 @@ while menu_act:
             nombre_dueno=input("Ingrese nombre del dueño del vehículo: ")
             nombre_dueno_almacenado=nombre_dueno
         lista= [tipo_almacenado,patente_almacenado,marca_almacenado,precio_almacenado,multas_almacenado,fecha_registro_almacenado,nombre_dueno_almacenado]
-        print("Los datos almacenados en informacion vehicular son: ", lista)
+        print("Los datos almacenados en informacion vehicular son: ", lista[i])
         continue
     if opcion == 2:
         print("Usted seleccionado opcion 2.- BUSCAR")
