@@ -8,7 +8,8 @@ opcion_info_vehi=0
 lista=[]
 multas=0
 menu_act=True
-er=True
+
+marca_activa=True
 #ALMACENAMIENTO DE INFORMACION VEHICULAR
 tipo_almacenado=0
 patente_almacenado=0        
@@ -47,7 +48,13 @@ while menu_act:
                 patente=input("Ingrese patente vehicular: ")
                 patente_almacenado=patente
             marca=input("Ingrese marca del vehiculo: ")
-            marca_almacenado=marca
+            caracteres=len(marca)
+            for i in marca:
+                if caracteres < 2 or caracteres > 15:
+                    print("La marca ingresada debe contener entre 2 y 15 caracteres!!")
+                    marca=input("Ingrese marca del vehiculo: ")
+                marca_almacenado=marca
+                
             precio=int(input("Ingrese precio del vehículo: $ "))
             if precio >= 5000000:
                 precio_almacenado=precio
@@ -66,7 +73,7 @@ while menu_act:
         lista= [tipo_almacenado,patente_almacenado,marca_almacenado,precio_almacenado,multas_almacenado,fecha_registro_almacenado,nombre_dueno_almacenado]
         arreglo=np.array(lista)
         for i in range(1):
-            print("El tipo de vehñiculo fue un/a: ", tipo_almacenado)
+            print("El tipo de vehiculo ingresado fue un/a: ", tipo_almacenado)
             print("La patente vehicular ingresada fue: ", patente_almacenado)
             print("La marca del vehicular ingresada fue: ", marca_almacenado)
             print("El precio del vehicular ingresado fue por un monto de: ", precio_almacenado)
