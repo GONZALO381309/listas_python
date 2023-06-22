@@ -34,24 +34,25 @@
 #JUEGO 
 
 #secret_number = 777
-
-#print(
-#"""
-#+==================================+
-#| ¡Bienvenido a mi juego, muggle!  |
-#| Introduce un número entero       |
-#| y adivina qué número he          |
-#| elegido para ti.                 |
-#| Entonces,                        |
-#| ¿Cuál es el número secreto?      |
-#+==================================+
-#""")
-#secret_number=int(input("Ingresa minumero secreto ahora: "))
-#while secret_number != 777:
- #   print("¡Ja, ja! ¡Estás atrapado en mi bucle!")
-   # secret_number=int(input("Ingresa minumero secreto ahora: "))
-  #  if secret_number == 777:
-  #      print("¡Bien Hecho, Muggle! Eres Libre ahora")
+import random
+print(
+"""
++==================================+
+| ¡Bienvenido a mi juego, muggle!  |
+| Introduce un número entero       |
+| y adivina qué número he          |
+| elegido para ti.                 |
+| Entonces,                        |
+| ¿Cuál es el número secreto?      |
++==================================+
+""")
+secret_number=int(input("Ingresa minumero secreto ahora: "))
+valor=random.randint(1,10)
+while secret_number != 777:
+    print("¡Ja, ja! ¡Estás atrapado en mi bucle!")
+    secret_number=int(input("Ingresa minumero secreto ahora: "))
+    if secret_number == 777:
+        print("¡Bien Hecho, Muggle! Eres Libre ahora")
 
 #CONTEO DE SEGUNDO DE MANERA INTERNA
 #import time
@@ -118,9 +119,9 @@
 #    print(digit)               #ARROJA VALOR COMO COLUMNA......
 
 
-for digit in "0165031806510":
-    if digit == "0":
-        print("x", end="")
-        continue
-    print(digit, end="")         #ARROJA VALOR HORIZONTAL....
+#for digit in "0165031806510":
+#    if digit == "0":
+#        print("x", end="")
+#        continue
+#    print(digit, end="")         #ARROJA VALOR HORIZONTAL....
     
