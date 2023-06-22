@@ -22,7 +22,9 @@ certificado_act=True
 solicitar_certificado_adicional=0
 #VARIABLES DE OPCION 3
 valor_certificado=(1500,3500)
+print("--------------------------------------")
 print("Bienvenido a la Automotora AUTO SEGURO")
+print("--------------------------------------")
 while menu_act:
     print("Selecciones una de las siguientes opciones para acceder:")
     print()
@@ -67,7 +69,8 @@ while menu_act:
                 multas_almacenado=multas
                 fecha_multas=input("Ingrese fecha de la multa del vehículo, siendo dd-mes-aaaa:  ")
                 alma_fecha_multas=fecha_multas
-            fecha_registro=input("Ingrese fecha de registro del vehículo: ")
+            else:
+                fecha_registro=input("Ingrese fecha de registro del vehículo: ")
             fecha_registro_almacenado=fecha_registro
             nombre_dueno=input("Ingrese nombre del dueño del vehículo: ")
             nombre_dueno_almacenado=nombre_dueno
@@ -87,6 +90,7 @@ while menu_act:
             print("El dueño del vehículo es: ", nombre_dueno_almacenado)
 
         continue
+#SELECCION MENU 2 BUSCAR --------------------------------------------------------------------------------------------------------------
     if opcion == 2:
         print("Usted seleccionado opcion 2.- BUSCAR")
         buscar_patente=input("Ingrese patente del vehiculo a buscar: ")
@@ -104,7 +108,7 @@ while menu_act:
         else:
             print("Patente no existe en sistema")
         continue
-    
+ #SELECCION MENU 3 -- CERTIFICADOS ------------------------------------------------------------------------------------------------   
     while certificado_act:
         if opcion == 3:
             print("Usted seleccionado opcion 3.- IMPRIMIR CERTIFICADOS")
@@ -132,12 +136,7 @@ while menu_act:
         print("Versión del Programa: 1.0")
         break
 
-
-       
-                 
-            
-
-    menu_act=False
+    #menu_act=False
 
 
 

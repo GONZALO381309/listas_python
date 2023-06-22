@@ -8,10 +8,13 @@ opcion=0
 matrizbus1=0
 rut_comprador1=0
 asiento_guardado=0
-lista2=0
+lista_asiento=[]
 #CREACION MENU
 while menu_act:
-    print("----MENU COMPRA DE PASAJES DE BUS---\n")
+    print("-------------------------------------")
+    print("----MENU COMPRA DE PASAJES DE BUS----")
+    print("-------------------------------------")
+    print()
     print("1.INGRESE COMPRA DE PASAJES")
     print("2.INGRESE DATOS PERSONALES PARA COMPRA DE PASAJES")
     print("3.INGRESE NUMERO DE ASIENTO A COMPRAR")
@@ -60,13 +63,16 @@ while menu_act:
             fil=fila+1
         if fila < 0 or fila > 10:
             print("Fila fuera del rango, debe volver a ingresar")
-            break
+        
         columna=int(input("Ingrese columna de asiento de su pasaje: "))
         if columna >= 0 and columna <= 4:
             col=columna+1
         if columna < 0 or columna > 4:
             print("columna fuera del rango, debe volver a ingresar")
+        
             break
+        li=fil*4-(4-col)
+        lista_asiento.append(li)
         matrizbus[fila,columna]="x"
         print(matrizbus)
         print("seleccionate el asiento numero: ",fil*4-(4-col) )
@@ -86,6 +92,7 @@ while menu_act:
                 if columna < 0 or columna > 4:
                     print("columna fuera del rango, debe volver a ingresar")
                     break
+                
                 matrizbus[fila,columna]="x"
                 print(matrizbus)
                 print("seleccionate el asiento numero: ",fil*4-(4-col) )
@@ -115,12 +122,9 @@ while menu_act:
         print("------------------BOLETA------------------")
         print(f"El total de la compra es de:-----$ {monto_pasaje}")
         print(f"Señor/a {nom_comprador} viaja a {Destino}")
-
+        print(f"En el asiento Nº: ",lista_asiento)
         
-        li=[fil*4-(4-col)]
-        #lista2=(fil,col),li
-        print(f"El asiento comprado es el: ",li)
-
+        
  #OPCION DE SALIDA DEL SISTEMA  ---------------------------------------------------------------------------------------
   
     if opcion_seleccionada == 6:
