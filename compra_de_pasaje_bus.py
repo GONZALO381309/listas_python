@@ -11,23 +11,6 @@ rut_comprador1=0
 asiento_guardado=0
 lista_asiento=[]
 
-#FUNCIONES INICIO
-
-def opcion4(rut_comprador):
-    # print("Usted ha seleciconado la opcion 4.BUSCAR PASAJE")
-    # rut_comprador=int(input("Ingrese el rut del comprador, sin puntos ni guion: "))
-    if rut_comprador == rut_comprador1:
-        print(f"Los nombres y apellidos ingresado son: {nom_comprador}  {apellido_comprador}")
-        print("Y el Rut es: ", rut_comprador1)
-        print("El correo para envío de pasajes es: ", correo_comprador)
-        print("Y viaja a ", Destino)
-        print("En el/os asientos Nº: ", lista_asiento)
-
-    else:
-        print("Rut no existe o fue ingresado erroneamente")
-
-#FUNCIONES FIN
-
 #CREACION MENU
 while menu_act:
     print("-------------------------------------")
@@ -133,26 +116,21 @@ while menu_act:
                 continue
             if opcion==2:
                 break  
-        
-
 
  #OPCION DE BUSQUEDA DE PASAJE -------------------------------------------------------------------------------------------           
 
     if opcion_seleccionada == 4:
         print("Usted ha seleciconado la opcion 4.BUSCAR PASAJE")
         rut_comprador=int(input("Ingrese el rut del comprador, sin puntos ni guion: "))
-        opcion4(rut_comprador)
-        # print("Usted ha seleciconado la opcion 4.BUSCAR PASAJE")
-        # rut_comprador=int(input("Ingrese el rut del comprador, sin puntos ni guion: "))
-        # if rut_comprador == rut_comprador1:
-        #    print(f"El nombre y apellido ingresado es: {nom_comprador}  {apellido_comprador}")
-        #    print("Y el Rut es: ", rut_comprador1)
-        #    print("El correo para envío de pasajes es: ", correo_comprador)
-        #    print("Y viaja a ", Destino)
-        #    print("En el/os asientos Nº: ", lista_asiento)
+        if rut_comprador == rut_comprador1:
+            print(f"El nombre y apellido ingresado es: {nom_comprador}  {apellido_comprador}")
+            print("Y el Rut es: ", rut_comprador1)
+            print("El correo para envío de pasajes es: ", correo_comprador)
+            print("Y viaja a ", Destino)
+            print("En el/os asientos Nº: ", lista_asiento)
 
-        # else:
-        #     print("Rut no existe o fue ingresado erroneamente")
+        else:
+            print("Rut no existe o fue ingresado erroneamente")
         
 #OPCION DE VER BOLETA CON DETALLE ------------------------------------------------------------------------------------
 
