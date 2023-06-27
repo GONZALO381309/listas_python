@@ -9,6 +9,44 @@ asiento_guardado=0
 menu_act= True
 asiento_act=True
 lista_asiento=[]
+
+#INICIO FUNCIONES
+
+def opc3():
+    if opcion_seleccionada == 3:
+        print("1.EL ARO")
+        print("2.LA SIRENITA")
+        print("3.THE FLASH")
+        print("4.MARIO BROS")
+        ingreso_pelicula=int(input("seleccione una palicula: "))
+        if ingreso_pelicula==1:
+            ingreso_pelicula="EL ARO"
+            print("usted a seleccionado la pelicula: ", ingreso_pelicula)
+        if ingreso_pelicula==2:
+            ingreso_pelicula="LA SIRENITA"
+            print("usted a seleccionado la pelicula: ", ingreso_pelicula)
+        if ingreso_pelicula==3:
+            ingreso_pelicula="THE FLASH"
+            print("usted a seleccionado la pelicula: ", ingreso_pelicula)
+        if ingreso_pelicula==4:
+            ingreso_pelicula="MARIO BROS"
+            print("usted a seleccionado la pelicula: ", ingreso_pelicula)
+        return ingreso_pelicula
+
+def opc4():
+    if opcion_seleccionada == 4:
+        print("------------------------------------------")
+        print("-----    >>>>>> BOLETA <<<<<<    ---------")
+        print("------------------------------------------")
+        print(f"El total de la compra es de:-----$ {monto_asiento}")
+        print("Usuari@ verá la pelicula: ", ingreso_pelicula)
+        print(f"El asiento comprado es o son los Nª {lista_asiento}")
+        
+
+
+
+#FIN FUNCIONES
+
 while menu_act:
     print("------------------------------")
     print("----MENU DE INGRESO AL CINE---")
@@ -94,30 +132,32 @@ while menu_act:
 
 #MENU OPCION 3 -------------------------------------------------------------------------     
     if opcion_seleccionada == 3:
-        print("1.EL ARO")
-        print("2.LA SIRENITA")
-        print("3.THE FLASH")
-        print("4.MARIO BROS")
-        ingreso_pelicula=int(input("seleccione una palicula: "))
-        if ingreso_pelicula==1:
-            ingreso_pelicula="EL ARO"
-            print("usted a seleccionado la pelicula: ", ingreso_pelicula)
-        if ingreso_pelicula==2:
-            ingreso_pelicula="LA SIRENITA"
-            print("usted a seleccionado la pelicula: ", ingreso_pelicula)
-        if ingreso_pelicula==3:
-            ingreso_pelicula="THE FLASH"
-            print("usted a seleccionado la pelicula: ", ingreso_pelicula)
-        if ingreso_pelicula==4:
-            ingreso_pelicula="MARIO BROS"
-            print("usted a seleccionado la pelicula: ", ingreso_pelicula)
+        opc3()
+        #print("1.EL ARO")
+        #print("2.LA SIRENITA")
+        #print("3.THE FLASH")
+        #print("4.MARIO BROS")
+        #ingreso_pelicula=int(input("seleccione una palicula: "))
+        #if ingreso_pelicula==1:
+        #    ingreso_pelicula="EL ARO"
+        #    print("usted a seleccionado la pelicula: ", ingreso_pelicula)
+        #if ingreso_pelicula==2:
+        #    ingreso_pelicula="LA SIRENITA"
+        #    print("usted a seleccionado la pelicula: ", ingreso_pelicula)
+        #if ingreso_pelicula==3:
+        #    ingreso_pelicula="THE FLASH"
+        #    print("usted a seleccionado la pelicula: ", ingreso_pelicula)
+        #if ingreso_pelicula==4:
+        #    ingreso_pelicula="MARIO BROS"
+        #    print("usted a seleccionado la pelicula: ", ingreso_pelicula)
 
 #MENU OPCION 4 ---------------------------------------------------------------------------------------------
     if opcion_seleccionada == 4:
-        print("------------------BOLETA------------------")
-        print(f"El total de la compra es de:-----$ {monto_asiento}")
-        print("Usuari@ verá la pelicula: ",(ingreso_pelicula))
-        print(f"El asiento comprado es o son los Nª {lista_asiento}")
+        opc4()
+        #print("------------------BOLETA------------------")
+        #print(f"El total de la compra es de:-----$ {monto_asiento}")
+        #print("Usuari@ verá la pelicula: ",(ingreso_pelicula))
+        #print(f"El asiento comprado es o son los Nª {lista_asiento}")
         #print("En el asiento numero: ",matrizbus)
 
 #MENU OPCION 5 ----------------------------------------------------------------------------------------------

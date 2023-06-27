@@ -120,6 +120,7 @@ while menu_act:
  #OPCION DE BUSQUEDA DE PASAJE -------------------------------------------------------------------------------------------           
 
     if opcion_seleccionada == 4:
+        
         print("Usted ha seleciconado la opcion 4.BUSCAR PASAJE")
         rut_comprador=int(input("Ingrese el rut del comprador, sin puntos ni guion: "))
         if rut_comprador == rut_comprador1:

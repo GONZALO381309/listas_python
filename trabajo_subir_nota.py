@@ -7,6 +7,7 @@ lista=()
 multas=0
 menu_act=True
 marca_activa=True
+salir=True
 opcion_certificado=0
 #ALMACENAMIENTO DE INFORMACION VEHICULAR
 tipo_almacenado=0
@@ -15,6 +16,7 @@ marca_almacenado=0
 precio_almacenado=0
 multas_almacenado=0
 multas_almacenado1=0
+fecha_registro=0
 fecha_registro_almacenado=0
 nombre_dueno_almacenado=0
 alma_fecha_multas=0
@@ -70,7 +72,8 @@ while menu_act:
                 fecha_multas=input("Ingrese fecha de la multa del vehículo, siendo dd-mes-aaaa:  ")
                 alma_fecha_multas=fecha_multas
             else:
-                fecha_registro=input("Ingrese fecha de registro del vehículo: ")
+                print()
+            fecha_registro=input("Ingrese fecha de registro del vehículo: ")
             fecha_registro_almacenado=fecha_registro
             nombre_dueno=input("Ingrese nombre del dueño del vehículo: ")
             nombre_dueno_almacenado=nombre_dueno
@@ -127,7 +130,7 @@ while menu_act:
                 print("Y su dueño es: ",nombre_dueno_almacenado)
             solicitar_certificado_adicional=int(input("Desea algun otro ceritifcado?\n1.SI\n2.NO\n"))
         if solicitar_certificado_adicional != 1:
-            print("Selecciono la opcion no desear mas certificados, muchas gracias.")
+            print("Selecciono no desear mas certificados, muchas gracias.")
             break
     
     if opcion == 4:
@@ -136,7 +139,7 @@ while menu_act:
         print("Versión del Programa: 1.0")
         break
 
-    #menu_act=False
+    
 
 
 
