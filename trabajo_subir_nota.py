@@ -6,9 +6,8 @@ opcion_info_vehi=0
 lista=()
 multas=0
 menu_act=True
-marca_activa=True
-salir=True
 opcion_certificado=0
+suma_total_certificados=0
 #ALMACENAMIENTO DE INFORMACION VEHICULAR
 tipo_almacenado=0
 patente_almacenado=0      
@@ -132,7 +131,8 @@ while menu_act:
         if solicitar_certificado_adicional != 1:
             print("Selecciono no desear mas certificados, muchas gracias.")
             break
-    
+
+#SELECCION MENU 4 -- SALIR ------------------------------------------------------------------------------------------------    
     if opcion == 4:
         print("Usted ha seleccionado la opcion 4.- SALIR")
         print("Gonzalo Cortez")
