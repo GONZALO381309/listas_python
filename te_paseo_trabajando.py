@@ -67,7 +67,7 @@ while menu_act:
             print("El precio por el servicio de paseo es de: $ ", acumulador_precio)
         
             continue
-      
+##############################################################################################################     BUSCAR     
     if opcion == 2:
         print("Usted a seleccionado la opcion 2.- BUSCAR")
         while buscar_activo:
@@ -115,6 +115,8 @@ while menu_act:
                 
         continue
     print("")
+
+ #################################################################################################          IMPRIMIR BOLETA   
     if opcion == 3:
         costo_aleatorio=random.randint(3500,12900)
         print("-----------------       BOLETA       -----------------")
@@ -206,7 +208,7 @@ while menu_act:
            
         continue
 
-
+###############################################################################################     SALIR DEL SISTEMA
     if opcion == 4:
         print("Usted ha seleccionado la opcion salir")
         print("Muchas gracias\nVuelva pronto.")
